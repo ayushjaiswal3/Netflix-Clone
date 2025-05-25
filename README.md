@@ -107,27 +107,27 @@ spring.datasource.password=your_mysql_password
 
 
 ## The MySQL database consists of the following tables:
-- users: Stores customer and restaurant owner details like username, password, contact info, roles, etc.
+- users: Stores user information like login credentials and subscription status.
 
-- address: Contains delivery or billing addresses linked to users.
+- subscription: Tracks the active subscription of each user with start and end dates.
 
-- cart: Represents a user's cart session, tracking items before order placement.
+- subscription_plan: Defines available subscription plans (e.g., Basic, Premium).
 
-- cart_item: Line items within the cart, with quantity and linked food IDs.
+- subscription_status: Represents the current state of a user's subscription (Active, Expired).
 
-- category: Defines different categories for food items (e.g., Pizza, Drinks).
+- genre: Lists all genres like Action, Drama, Horror, etc.
 
-- event: Stores promotional or seasonal events (e.g., discounts, offers).
+- cast: Stores actor details associated with movies or series.
 
-- food: Contains food item details such as name, price, description, and category.
+- video: Represents individual movies or episodes with metadata and streaming links.
 
-- food_images: Stores image metadata or URLs for food items.
+- webseries: Groups episodes under a single web series title.
 
-- food_ingredients: Links food items with their ingredients (many-to-many relationship).
+- favorites: Keeps track of videos users have marked as favorites.
 
-- ingredients: List of all ingredients used in recipes.
+- review: Contains user reviews and ratings for videos.
 
-- ingredients_category: Categorizes ingredients (e.g., Veg, Non-Veg, Dairy).
+- watch_history: Logs which videos a user has watched and when.
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
