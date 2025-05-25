@@ -19,15 +19,25 @@ An intuitive online platform for browsing menus, placing food orders, and tracki
 
 ## Features
 
-- **User Management**: Users can sign up, log in, and securely manage their profiles using JWT authentication.  
-- **Role-Based Access Control**: Different access levels for Restaurant Owners and Customers to personalize experiences and improve security.  
-- **Restaurant & Menu Browsing**: Browse restaurants and dynamically view their menus and food item details.  
-- **Cart & Order Placement**: Add items to cart, update quantities, and place orders with instant confirmation.  
-- **Payment Integration**: Secure payments handled through Stripe API.  
-- **Order Tracking**: Real-time status updates for orders post-placement.  
-- **Admin/Owner Dashboard**: Restaurant owners can manage menus, view orders, and monitor customer interactions.  
-- **State Management**: Redux ensures consistent application state across components.  
-- **Responsive UI**: Built with React.js and Material UI to deliver smooth, user-friendly experiences on all devices.
+- **User Management**: Users can register, log in, and securely manage profiles with JWT-based authentication.
+
+- **Role-Based Access Control**: Different roles such as Admin, Subscriber, and Guest ensure personalized access and security.
+
+- **Dynamic Content Browsing**: Browse movies, web series, genres, and cast details with rich metadata and filtering options.
+
+- **Favorites & Watchlist**: Users can add movies and series to favorites or watchlists for easy access later.
+
+- **Review & Ratings**: Users can submit reviews and ratings to share feedback on movies and series.
+
+- **Subscription Management**: Users can subscribe to different plans, view subscription status, and manage billing.
+
+- **Watch History**: Tracks user viewing history to offer personalized recommendations and resume playback.
+
+- **Responsive UI**: Built with React.js ensuring seamless experience across all devices.
+
+- **State Management**: Uses Redux for efficient and consistent application state handling.
+
+- **Secure Backend**: Spring Boot REST APIs with JWT and Spring Security for authentication and authorization.
 
 ---
 
