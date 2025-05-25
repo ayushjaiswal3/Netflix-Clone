@@ -13,9 +13,8 @@ A responsive streaming platform that allows users to browse, search, and stream 
 - [Architecture](#architecture)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Database Design](#database-design)  
+- [Database](#database)  
 - [Contributing](#contributing)  
-- [License](#license)  
 
 ---
 
@@ -118,8 +117,8 @@ spring.datasource.password=your_mysql_password
 ![DB Image](https://res.cloudinary.com/dxfn9epwh/image/upload/v1725342370/v/cip7wwfsdvati6gvdgrz.png)
 -->
 
-## Database Design
-## The MySQL database consists of the following tables:
+## Database 
+ The MySQL database consists of the following tables:
 - users: Stores user information like login credentials and subscription status.
 
 - subscription: Tracks the active subscription of each user with start and end dates.
