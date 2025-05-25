@@ -1,6 +1,8 @@
-# Online Food Ordering Website
+# Netflix Clone Streaming Platform
 
-An intuitive online platform for browsing menus, placing food orders, and tracking delivery in real-time. The system supports secure user authentication, role-based access control, payment integration, and real-time order tracking.
+A responsive streaming platform that allows users to browse, search, and stream movies and TV shows with dynamic content fetched directly from the TMDb API. The system features secure user authentication, subscription management, personalized watch history, and favorites, all supported by a scalable backend showcasing RESTful APIs for user and subscription management.
+
+
 
 ---
 
@@ -19,37 +21,36 @@ An intuitive online platform for browsing menus, placing food orders, and tracki
 
 ## Features
 
-- **User Management**: Users can register, log in, and securely manage profiles with JWT-based authentication.
+- **Responsive UI**: Developed a fully responsive Netflix clone using React.js to ensure a smooth, engaging experience across all devices.
 
-- **Role-Based Access Control**: Different roles such as Admin, Subscriber, and Guest ensure personalized access and security.
+- **Dynamic Content Integration**: Fetches and displays real-time movie and TV show data from the TMDb API.
 
-- **Dynamic Content Browsing**: Browse movies, web series, genres, and cast details with rich metadata and filtering options.
+- **Seamless Navigation**: Implemented smooth client-side routing with React Router for intuitive user navigation.
 
-- **Favorites & Watchlist**: Users can add movies and series to favorites or watchlists for easy access later.
+- **Scalable Backend**: Built a modular Spring Boot backend with RESTful APIs to efficiently manage movies, genres, users, and subscriptions.
 
-- **Review & Ratings**: Users can submit reviews and ratings to share feedback on movies and series.
+- **Secure Authentication & Authorization**: Enforced JWT-based authentication and role-based access control using Spring Security.
 
-- **Subscription Management**: Users can subscribe to different plans, view subscription status, and manage billing.
+- **Robust Input Validation & Error Handling**: Ensured data integrity and improved reliability through comprehensive validation and centralized error management.
 
-- **Watch History**: Tracks user viewing history to offer personalized recommendations and resume playback.
-
-- **Responsive UI**: Built with React.js ensuring seamless experience across all devices.
-
-- **State Management**: Uses Redux for efficient and consistent application state handling.
-
-- **Secure Backend**: Spring Boot REST APIs with JWT and Spring Security for authentication and authorization.
+- **Optimized API Performance**: Designed APIs for efficient data retrieval and minimal latency, enhancing overall system responsiveness.
+  
 
 ---
 
 ## Tech Stack
 
-- **Frontend**: React.js, Material UI, Redux, React Router  
-- **Backend**: Spring Boot (RESTful APIs)  
-- **Database**: MySQL  
-- **Authentication**: JWT (Role-based)  
-- **Payments**: Stripe API  
-- **State Management**: Redux  
-- **Build & Deployment**: Docker
+- **Frontend**: React.js, Redux, React Router, TMDb API
+
+- **Backend**: Spring Boot (RESTful APIs)
+
+- **Database**: MySQL
+
+- **Authentication**: JWT (Role-based)
+
+- **State Management**: Redux
+
+- **UI Library**: Material UI
 
 ---
 
@@ -57,12 +58,15 @@ An intuitive online platform for browsing menus, placing food orders, and tracki
 
 The system follows a layered architecture to ensure scalability, maintainability, and security:
 
-- **Frontend**: React.js app uses Material UI components and Redux for state management. Communicates with backend REST APIs for all data.  
-- **Backend**: Spring Boot REST API handles authentication, authorization, order processing, menu management, and payment integration.  
-- **Authentication**: JWT tokens are used for stateless, secure user sessions with role-based access controls (Customer, Owner).  
-- **Database**: MySQL stores persistent data, including users, orders, menus, payments, and more.  
-- **Payment Processing**: Stripe API integration facilitates secure, real-time payment transactions.  
-- **Deployment**: Docker containers used for consistent environment setup and deployment.
+- **Frontend**: Developed with React.js, the frontend directly consumes the TMDb API to fetch and display dynamic movie and TV show content. It leverages React Router for seamless navigation and Redux for efficient state management, delivering a responsive and engaging user experience across all devices.
+
+- **Backend**: Built with Spring Boot, the backend serves as a standalone RESTful API showcase. It provides endpoints for user management, subscriptions, watch history, and favorites. This backend is designed purely for demonstration purposes and does not interact with the frontend or the TMDb API.
+
+- **Authentication & Authorization**: The backend implements JWT-based authentication along with role-based access control to demonstrate secure user management and access policies.
+
+- **Database**: A MySQL database is employed in the backend to persist user information, subscription details, watch history, and other related data entities.
+
+- **Deployment**: Both frontend and backend are deployed independently, enabling flexible access and showcasing of individual components.
 
 ---
 
@@ -73,7 +77,6 @@ The system follows a layered architecture to ensure scalability, maintainability
 - Java Development Kit (JDK 11 or later)  
 - MySQL Server (version 8 recommended)  
 - Node.js and npm (for frontend)  
-- Docker (optional, for containerized deployment)
 
 ### Backend Setup
 
