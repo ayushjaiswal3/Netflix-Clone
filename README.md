@@ -118,7 +118,7 @@ spring.datasource.password=your_mysql_password
 ![DB Image](https://res.cloudinary.com/dxfn9epwh/image/upload/v1725342370/v/cip7wwfsdvati6gvdgrz.png)
 -->
 
-##Database Design
+## Database Design
 ## The MySQL database consists of the following tables:
 - users: Stores user information like login credentials and subscription status.
 
